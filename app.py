@@ -30,18 +30,49 @@ for i in range(30):
     
 
     chart.add_rows(
+
         pd.DataFrame(
+
             {
-                "temperature" : [new_data["temperatue"]],
-                "humidity" : [new_data["humidity"]]
+
+                "temperature": [new_data["temperature"]],
+
+                "humidity": [new_data["humidity"]]
+
             }
+
         )
+
     )
+
+ 
+
+    # Alerts
+
+    if new_data["temperature"] > 35:
+
+        st.warning("High Temperature Alert!")
+
+ 
+
     time.sleep(1)
-    csv = df.to_csv(index = False)
-    st.download_button(
-        label="Download Report",
-        data=csv,
-        file_name="streaming_report.csv",
-        mime="text/csv"
-    )
+
+ 
+
+# Download CSV Report
+
+csv = full_df.to_csv(index=False)
+
+ 
+
+st.download_button(
+
+    label="Download Report",
+
+    data=csv,
+
+    file_name="streaming_report.csv",
+
+    mime="text/csv"
+
+)
