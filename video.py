@@ -11,7 +11,7 @@ st.title("Video Streaming Analytics Dashboard")
 video_titles= [
   "Cloud Computing Basic",
   "AWS Tutorial",
-  "Pythin Full Course",
+  "Python Full Course",
   "Data Structures",
   "AI Introduction"
 ]
