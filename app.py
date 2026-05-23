@@ -17,6 +17,8 @@ for i in range(20):
 
         "humidity": random.randint(40, 90),
 
+        "location": random.choice(["Pune", "Mumbai", "Delhi"])
+
         "time": datetime.now().strftime("%H:%M:%S")
 
     }
