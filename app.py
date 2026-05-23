@@ -19,7 +19,9 @@ for i in range(30):
 
         "location": random.choice(["Pune", "Mumbai", "Delhi"]),
 
-        "time": datetime.now().strftime("%H:%M:%S")
+        "time": datetime.now().strftime("%H:%M:%S"),
+        
+        "Status": random.choice(["Cloudy", "Clear Sky", "Sunny", "Rain"])
 
     }
     data.append(new_data) 
