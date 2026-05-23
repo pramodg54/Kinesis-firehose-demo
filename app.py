@@ -27,4 +27,21 @@ for i in range(30):
     data.append(new_data) 
     df = pd.DataFrame(data)
     placeholder.dataframe(df)
+    
+
+    chart.add_rows(
+        pd.DataFrame(
+            {
+                "temperature" : [new_data["temperatue"]],
+                "humidity" : [new_data["humidity"]]
+            }
+        )
+    )
     time.sleep(1)
+    csv = df.to_csv(index = False)
+    st.download_button(
+        label="Download Report",
+        data=csv,
+        file_name="streaming_report.csv",
+        mime="text/csv"
+    )
