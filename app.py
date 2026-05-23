@@ -14,7 +14,7 @@ for i in range(20):
     "time" : datetime.now().strftime("%H:%M:%S")
   }
 data.append(new_data)
-df= pd.DataFrame(data)
+df=pd.DataFrame(data)
 placeholder.dataframe(df)
 time.sleep(1)
 
