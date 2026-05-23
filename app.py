@@ -1,14 +1,49 @@
 import streamlit as st
+
 import pandas as pd
+
 import random
+
 import time
+
 from datetime import datetime
 
-st.title("Kinesis Firehose Streaming Demo")
+ 
+
+st.title("Kinesis Firehose Analytics Dashboard")
+
+ 
+
+ 
+
+df = pd.DataFrame(columns=["temperature", "humidity"])
+
+ 
+
+ 
+
+chart = st.line_chart(df)
+
+ 
+
+ 
+
 data = []
-placeholder = st.empty()
+
+ 
+
+ 
+
+table_placeholder = st.empty()
+
+ 
+
+ 
 
 for i in range(30):
+
+ 
+
     new_data = {
 
         "device_id": random.randint(1000, 9999),
@@ -17,17 +52,29 @@ for i in range(30):
 
         "humidity": random.randint(40, 90),
 
-        "location": random.choice(["Pune", "Mumbai", "Delhi"]),
-
-        "time": datetime.now().strftime("%H:%M:%S"),
-        
-        "Status": random.choice(["Cloudy", "Clear Sky", "Sunny", "Rain"])
+        "time": datetime.now().strftime("%H:%M:%S")
 
     }
-    data.append(new_data) 
-    df = pd.DataFrame(data)
-    placeholder.dataframe(df)
+
+ 
+
+    # Append data
+
+    data.append(new_data)
+
+ 
+
+    # Create dataframe
+
+    full_df = pd.DataFrame(data)
+
+ 
+
     
+
+    table_placeholder.dataframe(full_df)
+
+ 
 
     chart.add_rows(
 
@@ -47,7 +94,7 @@ for i in range(30):
 
  
 
-    # Alerts
+ 
 
     if new_data["temperature"] > 35:
 
@@ -59,7 +106,7 @@ for i in range(30):
 
  
 
-# Download CSV Report
+ 
 
 csv = full_df.to_csv(index=False)
 
