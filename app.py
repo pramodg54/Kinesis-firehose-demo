@@ -8,7 +8,7 @@ st.title("Kinesis Firehose Streaming Demo")
 data = []
 placeholder = st.empty()
 
-for i in range(20):
+for i in range(30):
     new_data = {
 
         "device_id": random.randint(1000, 9999),
