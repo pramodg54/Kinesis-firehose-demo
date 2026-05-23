@@ -15,7 +15,7 @@ for i in range(20):
   }
 data.append(new_data)
 df= pd.DataFrame(data)
-placeholder.DataFrame(df)
+placeholder.dataframe(df)
 time.sleep(1)
 
     
