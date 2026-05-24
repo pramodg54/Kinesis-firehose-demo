@@ -6,7 +6,7 @@ st.title("Live Youtube Streaming")
  
 
 youtube_url = ["https://www.youtube.com/watch?v=O61gbmYZJmE",
-                "https://www.zee5.com/web-series/details/satrangi-badle-ka-khel/0-6-4z5929826/satrangi-badle-ka-khel-trailer/0-1-6z5961086",
+                "https://watch.plex.tv/watch/movie/one-eyed-jacks?uri=provider%3A%2F%2Ftv.plex.provider.vod%2Flibrary%2Fmetadata%2F5d776842eb5d26001f1e3b82",
                 "https://www.twitch.tv/ohnepixel",
                 "https://www.instagram.com/p/DTshte0CK2z/"
                ]
