@@ -9,7 +9,8 @@ youtube_url = ["https://www.youtube.com/watch?v=O61gbmYZJmE",
                 "https://www.youtube.com/watch?v=UrsmFxEIp5k",
                 "https://www.youtube.com/watch?v=O9v10jQkm5c",
                 "https://www.youtube.com/watch?v=28u7FhEWxyg",
-                "https://www.youtube.com/watch?v=u1fKQ5w4UFM"
+                "https://www.primevideo.com/region/eu/detail/0RV81WUUHUNK1H2SSUO4FFF6T5/ref=atv_hm_hom_c_cjm7wb_3_2?jic=8%7CEgNhbGw%3D",
+                "https://www.netflix.com/watch/82813816?trackId=254015180&tctx=0%2C0%2C32d8ffd3-367b-4d08-9fc3-11a4d260dcb4-175022200%2CNES_946256CF41107CBC4D928DCBBDEDDD-E911D54DEEF141-B11BB753AC_p_1779635628453%2CNES_946256CF41107CBC4D928DCBBDEDDD_p_1779635628453%2C%2C%2C%2C%2CVideo%3A82813816%2CbillboardPlayButton"
                ]
 
 
@@ -99,7 +100,7 @@ with col4:
 
 
 
-col5 = st.columns(1)[0]
+col5, col6 = st.columns(2)
 
 
 with col5:
@@ -116,3 +117,13 @@ with col5:
     else:
      st.warning("Unable to load stream")
 
+with col6:
+
+    st.subheader("Live Stream 6")
+
+    stream_url = get_stream_url(youtube_url[5])
+
+
+    if stream_url:
+
+        st.video(stream_url)
