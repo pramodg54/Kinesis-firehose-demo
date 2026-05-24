@@ -8,7 +8,7 @@ st.title("Live Youtube Streaming")
 youtube_url = ["https://www.youtube.com/watch?v=O61gbmYZJmE",
                 "https://www.youtube.com/watch?v=UrsmFxEIp5k",
                 "https://www.youtube.com/watch?v=O9v10jQkm5c",
-                "https://www.instagram.com/reel/DYhrChFTaXX/"
+                "https://www.instagram.com/reel/DYhrChFTaXX"
                ]
 
 
