@@ -45,7 +45,8 @@ with col1:
     if stream_url:
 
         st.video(stream_url)
-
+    else:
+     st.warning("Unable to load stream")
  
 
 # Stream 2
@@ -61,7 +62,8 @@ with col2:
     if stream_url:
 
         st.video(stream_url)
-
+    else:
+     st.warning("Unable to load stream")
  
 
 # Second row
@@ -83,7 +85,8 @@ with col3:
     if stream_url:
 
         st.video(stream_url)
-
+    else:
+     st.warning("Unable to load stream")
 # Stream 4
 
 with col4:
@@ -97,7 +100,8 @@ with col4:
     if stream_url:
 
         st.video(stream_url)
-
+    else:
+     st.warning("Unable to load stream")
 
 
 col5, col6 = st.columns(2)
@@ -113,7 +117,8 @@ with col5:
     if stream_url:
 
         st.video(stream_url)
-    
+    else:
+     st.warning("Unable to load stream")    
 
 with col6:
 
