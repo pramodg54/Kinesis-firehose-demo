@@ -37,7 +37,7 @@ with col1:
 
     st.subheader("Live Stream 1")
 
-    stream_url = get_stream_url(youtube_urls[0])
+    stream_url = get_stream_url(youtube_url[0])
 
  
 
@@ -53,7 +53,7 @@ with col2:
 
     st.subheader("Live Stream 2")
 
-    stream_url = get_stream_url(youtube_urls[1])
+    stream_url = get_stream_url(youtube_url[1])
 
  
 
@@ -75,7 +75,7 @@ with col3:
 
     st.subheader("Live Stream 3")
 
-    stream_url = get_stream_url(youtube_urls[2])
+    stream_url = get_stream_url(youtube_url[2])
 
  
 
@@ -89,7 +89,7 @@ with col4:
 
     st.subheader("Live Stream 4")
 
-    stream_url = get_stream_url(youtube_urls[3])
+    stream_url = get_stream_url(youtube_url[3])
 
  
 
