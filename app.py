@@ -99,11 +99,8 @@ with col4:
 
 
 
-col5 = st.columns(3)
+col5 = st.columns(1)[0]
 
- 
-
-# Stream 5
 
 with col5:
 
@@ -111,9 +108,11 @@ with col5:
 
     stream_url = get_stream_url(youtube_url[4])
 
- 
 
     if stream_url:
 
         st.video(stream_url)
+
+   else:
+       st.warning("Unable to load stream")
 
