@@ -113,6 +113,6 @@ with col5:
 
         st.video(stream_url)
 
-   else:
-       st.warning("Unable to load stream")
+else:
+st.warning("Unable to load stream")
 
